@@ -1,0 +1,1 @@
+﻿using System.Collections; using UnityEngine; using UnityEngine.SceneManagement;  public class LevelManager : MonoBehaviour {      public void LoadLevel(string name) {         Debug.Log("level load reguested " +name);         SceneManager.LoadScene(name);     }      public void QuitGame() {         Debug.Log("game has been quitted");         Application.Quit();     } } 
